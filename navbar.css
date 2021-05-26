@@ -1,0 +1,73 @@
+body{
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px 20px 100px ;
+    background-color: teal;
+    transition: 0.5s ease;
+    
+}
+
+.hamburger-wrap{
+    display: none;
+}
+
+.nav-items .nav-links{
+    font-size: 16px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-items .nav-links:hover{
+    background-color: white;
+    color: teal;
+    border-radius: 5px;
+}
+
+.logo-wrap .logo{
+    font-size: 30px;
+    color: white;
+   
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 900px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px ;
+    }
+
+    .hamburger-wrap {
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        color: white;
+
+    }
+    
+   
+
+    .open-nav-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .nav-links{
+        text-align: right;
+    }
+
+    
+}
+
+
+

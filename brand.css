@@ -1,0 +1,166 @@
+/* Reset Default Setting*/
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+
+}
+
+section{
+    padding: 100px 100px;
+    line-height: 1.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px ;
+    background-color: teal;
+    transition: 0.5s ease;
+    
+}
+
+.hamburger-wrap{
+    display: none;
+}
+
+.nav-items .nav-links{
+    font-size: 16px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-items .nav-links:hover{
+    background-color: white;
+    color: teal;
+    border-radius: 5px;
+}
+
+.logo-wrap .logo{
+    font-size: 30px;
+    color: white;
+   
+}
+
+.intro-box {
+    display: flex;
+}
+
+
+/* INTRODUCTION SESSION */
+.intro{
+    width: 50%;
+    color: teal;
+
+}
+
+.intro h1{
+    font-size: 35px;
+}
+
+.intro p{
+    font-size: 20px
+}
+
+.hey {
+    background-color: teal;
+    padding: 8px;
+    color: white;
+    border-radius: 10px 10px 10px 0px;
+}
+/* BUTTON SECTION */
+.submit-button {
+    align-content: center;
+    font-size: 18px ;
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: 100;
+    
+}
+
+.submit-button:hover {
+    font-weight: 600;
+
+}
+
+
+/* IMAGE SECTION */
+.my-image{
+    width: 50%;
+    
+}
+
+.my-image img{
+    width: 90%;
+    height: 90%;
+}
+
+
+/* BOX SECTION */
+.box-section{
+    display: flex;
+    /*gap: 60px*/;
+    justify-content: center;
+    
+    margin-bottom: 20px;
+    
+}
+
+.box{
+    background-color: teal; 
+    color: white;
+    height: 150px;
+    width: 250px;
+    padding: 50px;
+    font-size: 15px;
+    margin-right: 2rem;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 900px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px ;
+    }
+
+    .hamburger-wrap {
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        color: white;
+
+    }
+    
+    .nav-items{
+        display: none  ;
+    }
+
+    .open-nav-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .nav-links{
+        text-align: right;
+    }
+    
+}
+
+
+
